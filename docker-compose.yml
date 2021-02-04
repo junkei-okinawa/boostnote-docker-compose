@@ -1,0 +1,14 @@
+version: "3.4"
+
+services:
+  note:
+    image: node:14
+    tty: true
+    ports:
+    - "127.0.0.1:8080:8080"
+    volumes:
+      - ./BoostNote.next:/opt/BoostNote.next
+    environment:
+      PORT: 8080
+    working_dir: /opt/BoostNote.next
+    command: bash entry_point.sh && npm run dev:webpack
