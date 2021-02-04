@@ -1,0 +1,27 @@
+{
+  "include": ["src/**/*.ts", "src/**/*.tsx", "typings/**/*.d.ts"],
+  "exclude": ["dist", "node_modules"],
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "target": "es2019",
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "sourceMap": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "allowJs": true,
+    "checkJs": false,
+    "lib": ["dom", "esnext"],
+    "forceConsistentCasingInFileNames": true,
+    "experimentalDecorators": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}
